@@ -1,0 +1,22 @@
+addi $spr 0
+addi $s6 1
+add $t1 $s6
+addi $t1 6
+add $s1 $s6
+addi $s1 2
+add $s2 $s6
+addi $s2 4
+addi $t5 5
+out $t5
+addi $t6 4
+out $t6
+sw $t5 $s1
+sw $t6 $s2
+add $t4 $t5
+slt $t4 $t6
+bne $t4 4
+sub $t5 $t6
+out $t5
+j 3
+add $t6 $t5
+out $t6

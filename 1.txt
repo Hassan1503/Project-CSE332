@@ -1,0 +1,22 @@
+addi $t0 2
+out $t0
+addi $s1 1
+out $s1
+addi $s3 2
+out $s3
+addi $s5 4
+out $s5
+add $s1 $t0
+out $s1
+add $s3 $t0
+out $s3
+lw $t1 $s1
+out $t1
+lw $t3 $s3
+out $t3
+add $t1 $t3
+out $t1
+add $s5 $t0
+out $s5
+sw $t1 $s5
+out $t1

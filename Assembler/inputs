@@ -1,0 +1,33 @@
+addi $t0 1
+out $t0
+addi $s7 6
+out $s7
+addi $s3 2
+out $s3
+addi $s5 4
+out $s5
+add $s3 $t0
+out $s3
+add $s5 $t0
+out $s5
+add $s7 $t0
+out $s7
+lw $s4 $s3
+out $s4
+lw $s6 $s5
+out $s6
+add $t5 $s4
+out $t5
+slt $s4 $s6
+out $s4
+sub $spr $spr
+out $spr
+bne $s4 3
+out $s4
+sub $t5 $s6
+out $t5
+j 3
+add $t5 $s6
+out $t5
+sw $t5 $s7
+out $t5
